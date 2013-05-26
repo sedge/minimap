@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node m.js testmjs"
   },
-  "repository": "",
+  "repository": "https://github.com/twisterghost/minimap",
   "keywords": [
     "map",
     "string",
