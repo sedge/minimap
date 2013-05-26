@@ -1,0 +1,17 @@
+{
+  "name": "minimap",
+  "version": "0.0.3",
+  "description": "Simple, elegant data mapping and string templating without the bells and whistles.",
+  "main": "m.js",
+  "scripts": {
+    "test": "node m.js testmjs"
+  },
+  "repository": "",
+  "keywords": [
+    "map",
+    "string",
+    "data"
+  ],
+  "author": "Michael Barrett",
+  "license": "MIT"
+}
