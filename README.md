@@ -17,4 +17,4 @@ Simple, elegant data mapping and string templating without the bells and whistle
 
 ### Never replace
 
-`minimap.never({"token" : "value"});`
+`minimap.never("token");`
