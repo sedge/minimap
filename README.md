@@ -1,6 +1,6 @@
 # minimap
 
-Simple, elegant data mapping and string templating without the bells and whistles.
+Simple data mapping and string templating without the bells and whistles.
 
 ## Require it
 
