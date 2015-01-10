@@ -4,7 +4,7 @@
   "description": "Simple, elegant data mapping and string templating without the bells and whistles.",
   "main": "m.js",
   "scripts": {
-    "test": "node m.js testmjs"
+    "test": "./node_modules/mocha/bin/mocha --recursive test"
   },
   "repository": "https://github.com/twisterghost/minimap",
   "keywords": [
@@ -13,5 +13,9 @@
     "data"
   ],
   "author": "Michael Barrett",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0"
+  }
 }
