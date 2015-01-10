@@ -8,13 +8,20 @@ Simple data mapping and string templating without the bells and whistles.
 
 ## Use it
 
-`str = minimap.map({"token" : "value", "anothertoken" : "value2"}, "{token} {anothertoken}");`
-`// str now contains "value value2"`
+```JavaScript
+var template = 'Welcome to {siteTitle}, {name}!';
+var str = minimap.map({
+  siteTitle: 'NPM',
+  name: 'John'
+}, template);
+
+console.log(str) // Welcome to NPM, John!
+```
 
 ### Always replace
 
-`minimap.always({"token" : "value"});`
+`minimap.always({'token' : 'value'});`
 
 ### Never replace
 
-`minimap.never("token");`
+`minimap.never('token');`
