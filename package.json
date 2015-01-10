@@ -1,6 +1,6 @@
 {
   "name": "minimap",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple, elegant data mapping and string templating without the bells and whistles.",
   "main": "m.js",
   "scripts": {

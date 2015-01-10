@@ -1,0 +1,104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /home/michael/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/home/michael/.npm/minimap/0.1.0/package.tgz', '.' ]
+12 verbose tarball /home/michael/.npm/minimap/0.1.0/package.tgz
+13 verbose folder .
+14 info prepublish minimap@0.1.0
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /home/michael/.npm/1f1177db-tar.lock
+17 silly lockFile 2b04f2b7-el-npm-minimap-0-1-0-package-tgz tar:///home/michael/.npm/minimap/0.1.0/package.tgz
+18 verbose lock tar:///home/michael/.npm/minimap/0.1.0/package.tgz /home/michael/.npm/2b04f2b7-el-npm-minimap-0-1-0-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 2b04f2b7-el-npm-minimap-0-1-0-package-tgz tar:///home/michael/.npm/minimap/0.1.0/package.tgz
+22 silly lockFile 2b04f2b7-el-npm-minimap-0-1-0-package-tgz tar:///home/michael/.npm/minimap/0.1.0/package.tgz
+23 silly lockFile 1f066607-ichael-npm-minimap-0-1-0-package /home/michael/.npm/minimap/0.1.0/package
+24 verbose lock /home/michael/.npm/minimap/0.1.0/package /home/michael/.npm/1f066607-ichael-npm-minimap-0-1-0-package.lock
+25 silly lockFile 1f066607-ichael-npm-minimap-0-1-0-package /home/michael/.npm/minimap/0.1.0/package
+26 silly lockFile 1f066607-ichael-npm-minimap-0-1-0-package /home/michael/.npm/minimap/0.1.0/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'minimap',
+29 silly publish   version: '0.1.0',
+29 silly publish   description: 'Simple, elegant data mapping and string templating without the bells and whistles.',
+29 silly publish   main: 'm.js',
+29 silly publish   scripts: { test: './node_modules/mocha/bin/mocha --recursive test' },
+29 silly publish   repository: { type: 'git', url: 'https://github.com/twisterghost/minimap' },
+29 silly publish   keywords: [ 'map', 'string', 'data', 'template', 'replace' ],
+29 silly publish   author: { name: 'Michael Barrett' },
+29 silly publish   license: 'MIT',
+29 silly publish   devDependencies: { chai: '^1.10.0', mocha: '^2.1.0' },
+29 silly publish   readme: '# minimap\n\nSimple data mapping and string templating without the bells and whistles.\n\n## Require it\n\n`var minimap = require(\'minimap\');`\n\n## Use it\n\n```JavaScript\nvar template = \'Welcome to {siteTitle}, {name}!\';\nvar str = minimap.map({\n  siteTitle: \'NPM\',\n  name: \'John\'\n}, template);\n\nconsole.log(str) // Welcome to NPM, John!\n```\n\n### Always replace\n\n`minimap.always({\'token\' : \'value\'});`\n\n### Never replace\n\n`minimap.never(\'token\');`\n',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: '16dd352cbf14b964ebaf79abc132db11f6af77b2',
+29 silly publish   bugs: { url: 'https://github.com/twisterghost/minimap/issues' },
+29 silly publish   homepage: 'https://github.com/twisterghost/minimap',
+29 silly publish   _id: 'minimap@0.1.0',
+29 silly publish   _shasum: '32c8790cc712eca490a5f86b7357e2c3b2ac2c3a',
+29 silly publish   _from: '.' }
+30 verbose request where is /minimap
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id 77f37e90d6f7194e
+33 verbose url raw /minimap
+34 verbose url resolving [ 'https://registry.npmjs.org/', './minimap' ]
+35 verbose url resolved https://registry.npmjs.org/minimap
+36 verbose request where is https://registry.npmjs.org/minimap
+37 info trying registry request attempt 1 at 18:44:43
+38 http PUT https://registry.npmjs.org/minimap
+39 http 403 https://registry.npmjs.org/minimap
+40 verbose headers { date: 'Sat, 10 Jan 2015 18:44:44 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '2993',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-iad2148-IAD',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1420915483.949591,VS0,VE93',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden cannot modify pre-existing version: 0.1.0
+42 error old={"name":"minimap","version":"0.1.0","description":"Simple, elegant data mapping and string templating without the bells and whistles.","main":"m.js","scripts":{"test":"./node_modules/mocha/bin/mocha --recursive test"},"repository":{"type":"git","url":"https://github.com/twisterghost/minimap"},"keywords":["map","string","data","template","replace"],"author":{"name":"Michael Barrett"},"license":"MIT","devDependencies":{"chai":"^1.10.0","mocha":"^2.1.0"},"gitHead":"b8014ea52baa989ddeaeedbb450be800138c7f33","bugs":{"url":"https://github.com/twisterghost/minimap/issues"},"homepage":"https://github.com/twisterghost/minimap","_id":"minimap@0.1.0","_shasum":"803c7f9754b03e1a4c0419154afdee1f5693630e","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"twisterghost","email":"twisterghost@gmail.com"},"maintainers":[{"name":"twisterghost","email":"twisterghost@gmail.com"}],"dist":{"shasum":"803c7f9754b03e1a4c0419154afdee1f5693630e","tarball":"http://registry.npmjs.org/minimap/-/minimap-0.1.0.tgz"}}
+42 error new={"name":"minimap","version":"0.1.0","description":"Simple, elegant data mapping and string templating without the bells and whistles.","main":"m.js","scripts":{"test":"./node_modules/mocha/bin/mocha --recursive test"},"repository":{"type":"git","url":"https://github.com/twisterghost/minimap"},"keywords":["map","string","data","template","replace"],"author":{"name":"Michael Barrett"},"license":"MIT","devDependencies":{"chai":"^1.10.0","mocha":"^2.1.0"},"readme":"# minimap\u000a\u000aSimple data mapping and string templating without the bells and whistles.\u000a\u000a## Require it\u000a\u000a`var minimap = require('minimap');`\u000a\u000a## Use it\u000a\u000a```JavaScript\u000avar template = 'Welcome to {siteTitle}, {name}!';\u000avar str = minimap.map({\u000a  siteTitle: 'NPM',\u000a  name: 'John'\u000a}, template);\u000a\u000aconsole.log(str) // Welcome to NPM, John!\u000a```\u000a\u000a### Always replace\u000a\u000a`minimap.always({'token' : 'value'});`\u000a\u000a### Never replace\u000a\u000a`minimap.never('token');`\u000a","readmeFilename":"README.md","gitHead":"16dd352cbf14b964ebaf79abc132db11f6af77b2","bugs":{"url":"https://github.com/twisterghost/minimap/issues"},"homepage":"https://github.com/twisterghost/minimap","_id":"minimap@0.1.0","_shasum":"32c8790cc712eca490a5f86b7357e2c3b2ac2c3a","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"twisterghost","email":"twisterghost@gmail.com"},"maintainers":[{"name":"twisterghost","email":"twisterghost@gmail.com"}],"dist":{"shasum":"32c8790cc712eca490a5f86b7357e2c3b2ac2c3a","tarball":"http://registry.npmjs.org/minimap/-/minimap-0.1.0.tgz"}}: minimap
+42 error     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+42 error     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+42 error     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:943:16
+42 error     at process._tickCallback (node.js:419:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Linux 3.18.1-x86_64-linode50
+45 error command "/usr/bin/node" "/usr/bin/npm" "publish"
+46 error cwd /home/michael/dev/minimap
+47 error node -v v0.10.33
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]
